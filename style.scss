@@ -1,0 +1,86 @@
+$greyColor: #333;
+$whiteColor: #f2f2f2;
+$minusMargin: -30px;
+$minusMarginR: -40px;
+
+@media screen and (min-width: 480px)
+{
+    body
+    {
+        background-color: blueviolet;
+    }
+}
+
+.border
+{
+    border: 2rem;
+    border-style: solid;
+    border-color: $greyColor;
+}
+
+.image
+{
+    width:100%;
+    height: 100%;
+    border: 1rem;
+    border-color: $greyColor;
+    border-style: solid;
+}
+
+.header
+{
+    color: $whiteColor;
+    background-color: black;
+    background-image: linear-gradient(black, $greyColor);
+    text-align: center;
+    padding: 20px;
+    position: relative; 
+    margin-top: $minusMargin;
+}
+
+.nav
+{
+    overflow: hidden;
+    background-color: $greyColor;
+    a
+    {
+        float: left;
+        display: block;
+        color: $whiteColor;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    a:hover
+    {
+        background-color: #ddd;
+        color: black;
+        text-transform: none;
+    }
+}
+
+#img1
+{
+    @extend .image;
+}
+
+#img2
+{
+    @extend .image;
+}
+
+#img3
+{
+    @extend .image;
+}
+
+p
+{
+    background-color: $whiteColor;    
+}
+
+#title
+{
+    font-weight: bolder;
+}

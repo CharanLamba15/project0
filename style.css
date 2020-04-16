@@ -1,0 +1,46 @@
+@media screen and (min-width: 480px) {
+  body {
+    background-color: blueviolet; } }
+.border {
+  border: 2rem;
+  border-style: solid;
+  border-color: #333; }
+
+.image, #img1, #img2, #img3 {
+  width: 100%;
+  height: 100%;
+  border: 1rem;
+  border-color: #333;
+  border-style: solid; }
+
+.header {
+  color: #f2f2f2;
+  background-color: black;
+  background-image: linear-gradient(black, #333);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  margin-top: -30px; }
+
+.nav {
+  overflow: hidden;
+  background-color: #333; }
+  .nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; }
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+    text-transform: none; }
+
+p {
+  background-color: #f2f2f2; }
+
+#title {
+  font-weight: bolder; }
+
+/*# sourceMappingURL=style.css.map */
