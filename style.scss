@@ -1,3 +1,8 @@
+$greyColor: #333;
+$whiteColor: #f2f2f2;
+$minusMargin: -30px;
+$minusMarginR: -40px;
+
 @media screen and (min-width: 480px)
 {
     body
@@ -6,30 +11,42 @@
     }
 }
 
-body
+.border
 {
-    margin: 0;
+    border: 2rem;
+    border-style: solid;
+    border-color: $greyColor;
+}
+
+.image
+{
+    width:100%;
+    height: 100%;
+    border: 1rem;
+    border-color: $greyColor;
+    border-style: solid;
 }
 
 .header
 {
-    font-family: cursive;
-    background-color: #f1f1f1;
+    color: $whiteColor;
+    background-color: black;
+    background-image: linear-gradient(black, $greyColor);
     text-align: center;
     padding: 20px;
     position: relative; 
-    margin-top: -20px
+    margin-top: $minusMargin;
 }
 
 .nav
 {
     overflow: hidden;
-    background-color: #333;
+    background-color: $greyColor;
     a
     {
         float: left;
         display: block;
-        color: #f2f2f2;
+        color: $whiteColor;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -41,6 +58,26 @@ body
         color: black;
         text-transform: none;
     }
+}
+
+#img1
+{
+    @extend .image;
+}
+
+#img2
+{
+    @extend .image;
+}
+
+#img3
+{
+    @extend .image;
+}
+
+p
+{
+    background-color: $whiteColor;    
 }
 
 #title
