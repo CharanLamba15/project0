@@ -1,7 +1,6 @@
 $greyColor: #333;
 $whiteColor: #f2f2f2;
 $minusMargin: -30px;
-$minusMarginR: -40px;
 
 @media screen and (min-width: 480px)
 {
@@ -45,10 +44,7 @@ $minusMarginR: -40px;
 #jumbotron
 {
     background-color: #f2f2f2;
-    border: 1rem;
-    border-color: $greyColor;
-    border-style: solid;
-    margin-bottom: $minusMarginR;
+    margin-bottom: $minusMargin;
 }
 
 %fix
@@ -59,6 +55,7 @@ $minusMarginR: -40px;
 
 .fixCard
 {
+    overflow: hidden;
     @extend %fix;
 }
 
@@ -69,4 +66,14 @@ $minusMarginR: -40px;
     border-color: $greyColor;
     border-style: solid;
     border-collapse: collapse;
+}
+
+.footer
+{
+    color: $whiteColor;
+    background-color: $greyColor;
+    background-image: linear-gradient($greyColor, black);
+    text-align: center;
+    position: relative;
+    padding: 20px;
 }
