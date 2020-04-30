@@ -47,6 +47,11 @@ $minusMargin: -30px;
     margin-bottom: $minusMargin;
 }
 
+div > h3
+{
+    text-align: center;
+}
+
 %fix
 {
     width:100%;
@@ -76,4 +81,37 @@ $minusMargin: -30px;
     text-align: center;
     position: relative;
     padding: 20px;
+}
+
+table 
+{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+}
+
+th, td
+{
+    border: 1px;
+    border-style: solid;
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(1)
+{
+    background-color: $greyColor;
+    color: $whiteColor;
+    text-align: center;
+}
+
+tr:nth-child(even)
+{
+    background-color: lightgrey;
+}
+
+h4
+{
+    text-align: center;
 }
